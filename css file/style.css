@@ -1,0 +1,52 @@
+
+/* shared style */
+
+.heading{
+     font-family: "Noto Serif", serif;
+}
+
+.text{
+     font-family: "Inter", sans-serif;
+}
+
+
+/* custom style */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+
+
+}
+
+.navbar ul a {
+    margin-left: 45px;
+    text-decoration:none;
+}
+.banner{
+    display: flex;
+}
+
+
+
+.section-text{
+    text-align: center;
+}
+
+.shop-section{
+    display: grid;
+    grid-template-columns:repeat(4,1fr);
+
+}
+
+.shop-section h4{
+    text-align: center;
+}
