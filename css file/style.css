@@ -4,7 +4,7 @@
     padding: 0;
     box-sizing: border-box;
 
-
+   
 }
 
 /* shared style */
@@ -108,12 +108,26 @@ p,
 
 /* main section 2 */
 
-.section-img1 {
+.section-2-img1 {
     position: relative;
     margin: 0 10px;
+   
 
+.section-2-img2{
+    
+    
+    width: 286px;
+    height: 286px;
+  
 }
-
+    
+}
+.section-2-ab{
+    position: absolute;
+      top: -23%;
+    left: 65%;
+   
+}
 
 
 
@@ -142,8 +156,22 @@ p,
     flex-direction: column;
     gap: 20px;
     line-height: 30px;
-   
+
+
+
+
+}
+
+
+
+@media (max-width:760px){
+
   
-    
-    
+    .banner{
+        flex-direction: column-reverse;
+        align-items: start;
+
+        
+        
+    }
 }
