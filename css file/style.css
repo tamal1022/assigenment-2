@@ -2,7 +2,8 @@
 
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing:border-box;
+   
 
    
 }
@@ -16,8 +17,11 @@
 .text {}
 
 .container {
-    width: 1140px;
+
+    width:1140px;
     margin: 0 auto;
+    
+   
 
 }
 
@@ -30,6 +34,9 @@ p,
 }
 
 /* custom style */
+
+
+
 
 .navbar {
     display: flex;
@@ -55,7 +62,13 @@ p,
 .banner {
     display: flex;
     margin-top: 7.8rem;
-    align-items: end;
+    justify-content: center;
+    align-items: center;
+   
+  
+}
+.banner img{
+    width: 100%;
 }
 
 .banner-title {
@@ -90,6 +103,10 @@ p,
     grid-template-columns: repeat(4, 2fr);
 }
 
+.section-shop img{
+    width: 100%;
+}
+
 .section-shop h4 {
     text-align: center;
     line-height: 1.4rem;
@@ -111,23 +128,25 @@ p,
 .section-2-img1 {
     position: relative;
     margin: 0 10px;
+    width: 100%;
+ 
    
+    
+}
 
 .section-2-img2{
     
     
     width: 286px;
     height: 286px;
+      position: absolute;
+      top: -23%;
+    left: 65%;
+    
   
 }
     
-}
-.section-2-ab{
-    position: absolute;
-      top: -23%;
-    left: 65%;
-   
-}
+
 
 
 
@@ -164,14 +183,132 @@ p,
 
 
 
+/* section-3 */
+
+
+.section-3-title{
+
+    margin-top: 70px;
+    text-align: center;
+    font-size: 40px;
+}
+
+.section-3-left{
+   
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    
+   
+}
+
+
+
+
+.section-3-all img{
+    border-radius: 1rem;
+    display: block;
+    filter: brightness(60%);
+    
+}
+
+
+.section-3-all{
+    display: flex;
+    gap: 1rem;
+    margin-top: 6rem;
+}
+
+
+
+
+.img-content1{
+    position: relative;
+    display: inline-block;
+}
+
+
+.text-content1{
+    position: absolute;
+     top: 50%;
+  left: 50%; 
+  transform: translate(-50%, -50%);
+  text-align:center;
+  color: white;
+}
+
+.text-content1 a{
+    color: white;
+}
+
+
+
+/* section-4 */
+
+.section-4{
+    margin-top: 60px;
+}
+
+.section-4 img {
+  width: 100%;
+}
+
+.section-4-btn{
+    background-color:#E95A08;
+    padding: 0.5rem;
+}
+.form-4{
+    width:30vw;
+    padding: .5rem;
+}
+
+
+/* media  */
+
+
+
 @media (max-width:760px){
+
+   .container{
+    margin: 0;
+    width: 100%;
+   
+   }
 
   
     .banner{
         flex-direction: column-reverse;
-        align-items: start;
+       
 
         
         
     }
+
+.section-shop{
+    grid-template-columns: repeat(2,2fr);
+}
+ 
+.section-2{
+    flex-direction: column;
+
+
+}
+
+
+.section-2-img2{
+   display: none;
+}
+
+
+.li-hidden{
+    display: none;
+}
+
+.section-3-all{
+    flex-direction: column;
+}
+
+.section-3-all img{
+    width: 100%;
+} 
 }
