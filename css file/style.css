@@ -263,6 +263,38 @@ p,
 }
 
 
+
+
+
+
+/* footer-style */
+
+.footer-style{
+    display: flex;
+    justify-content:space-between;
+    
+}
+
+.footer-style ol{
+    
+}
+
+.footer-style li{
+     font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+    color: rgba(0, 0, 0, 0.5);
+    list-style: none;
+    line-height: 4rem;
+
+}
+
+.icon{
+    display:block;
+    gap: 20px;
+   
+}
+
 /* media  */
 
 
@@ -311,4 +343,9 @@ p,
 .section-3-all img{
     width: 100%;
 } 
+
+
+.footer-style{
+    flex-direction: column;
+}
 }
